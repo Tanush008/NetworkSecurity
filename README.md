@@ -12,122 +12,59 @@ NetworkSecurity is a Python-based project designed to collect, process, and stor
 
 📁 Modular project structure for easy extension
 
-NETWORKSECURITY
-│   __init__.py
+## 📂 Project Structure
+
+```text
+NetworkSecurity/
+├── __init__.py
+├── cloud/
+│   ├── __init__.py
+│   └── s3_syncer.py
 │
-├───cloud
-│   │   s3_syncer.py
-│   │   __init__.py
-│   │
-│   └───__pycache__
-│           s3_syncer.cpython-313.pyc
-│           __init__.cpython-313.pyc
+├── components/
+│   ├── __init__.py
+│   ├── data_ingestion.py
+│   ├── data_transformation.py
+│   ├── data_validation.py
+│   └── model_trainer.py
 │
-├───components
-│   │   data_ingestion.py
-│   │   data_Transformation.py
-│   │   data_validation.py
-│   │   model_trainer.py
-│   │   __init__.py
-│   │
-│   └───__pycache__
-│           data_ingestion.cpython-313.pyc
-│           data_Transformation.cpython-313.pyc
-│           data_validation.cpython-313.pyc
-│           model_trainer.cpython-313.pyc
-│           __init__.cpython-313.pyc
+├── constant/
+│   └── __init__.py
 │
-├───constant
-│   │   __init__.py
-│   │
-│   ├───training_pipeline
-│   │   │   __init__.py
-│   │   │
-│   │   └───__pycache__
-│   │           __init__.cpython-313.pyc
-│   │
-│   └───__pycache__
-│           __init__.cpython-313.pyc
+├── training_pipeline/
+│   └── __init__.py
 │
-├───entity
-│   │   artifact_entity.py
-│   │   config_entity.py
-│   │   __init__.py
-│   │
-│   └───__pycache__
-│           artifact_entity.cpython-313.pyc
-│           config_entity.cpython-313.pyc
-│           __init__.cpython-313.pyc
+├── entity/
+│   ├── __init__.py
+│   ├── artifact_entity.py
+│   └── config_entity.py
 │
-├───exception
-│   │   exception.py
-│   │   __init__.py
-│   │
-│   └───__pycache__
-│           exception.cpython-310.pyc
-│           exception.cpython-313.pyc
-│           __init__.cpython-310.pyc
-│           __init__.cpython-313.pyc
+├── exception/
+│   ├── __init__.py
+│   └── exception.py
 │
-├───logging
-│   │   logger.py
-│   │   __init__.py
-│   │
-│   └───__pycache__
-│           logger.cpython-310.pyc
-│           logger.cpython-313.pyc
-│           __init__.cpython-310.pyc
-│           __init__.cpython-313.pyc
+├── logging/
+│   ├── __init__.py
+│   └── logger.py
 │
-├───pipeline
-│   │   batch_pipeline.py
-│   │   training_pipeline.py
-│   │   __init__.py
-│   │
-│   └───__pycache__
-│           training_pipeline.cpython-313.pyc
-│           __init__.cpython-313.pyc
+├── pipeline/
+│   ├── __init__.py
+│   ├── batch_pipeline.py
+│   └── training_pipeline.py
 │
-├───utils
-│   │   __init__.py
-│   │
-│   ├───main_utils
-│   │   │   main_utils.py
-│   │   │   __init__.py
-│   │   │
-│   │   └───__pycache__
-│   │           main_utils.cpython-313.pyc
-│   │           __init__.cpython-313.pyc
-│   │
-│   ├───ml_utils
-│   │   │   __init__.py
-│   │   │
-│   │   ├───metric
-│   │   │   │   classification.py
-│   │   │   │   __init__.py
-│   │   │   │
-│   │   │   └───__pycache__
-│   │   │           classification.cpython-313.pyc
-│   │   │           __init__.cpython-313.pyc
-│   │   │
-│   │   ├───model
-│   │   │   │   estimator.py
-│   │   │   │   __init__.py
-│   │   │   │
-│   │   │   └───__pycache__
-│   │   │           estimator.cpython-313.pyc
-│   │   │           __init__.cpython-313.pyc
-│   │   │
-│   │   └───__pycache__
-│   │           __init__.cpython-313.pyc
-│   │
-│   └───__pycache__
-│           main_utils.cpython-313.pyc
-│           __init__.cpython-313.pyc
+├── utils/
+│   ├── __init__.py
+│   ├── main_utils.py
+│   └── ml_utils.py
 │
-└───__pycache__
-        __init__.cpython-310.pyc
-        __init__.cpython-313.pyc
+├── metric/
+│   ├── __init__.py
+│   └── classification.py
+│
+└── model/
+    ├── __init__.py
+    └── estimator.py
+
 🚀 Getting Started
 🛠️ Prerequisites
 
