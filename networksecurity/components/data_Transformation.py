@@ -13,7 +13,7 @@ from networksecurity.entity.artifact_entity import (
 from networksecurity.entity.config_entity import DataTransformationConfig
 import pandas as pd
 import numpy as np
-from networksecurity.utils.main_utils import save_object,save_numpy_array_data
+from networksecurity.utils.main_utils.main_utils import save_object,save_numpy_array_data
 
 class DataTransformation:
 
