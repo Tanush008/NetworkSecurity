@@ -12,6 +12,7 @@ class TrainingPipelineConfig:
         formatted_timestamp = timestamp.strftime("%m_%d%Y_%H_%M_%S")
         self.pipeline_name = training_pipeline.PIPELINE_NAME
         self.artifact_name = training_pipeline.ARTIFACT_DIR
+        self.model_dir=os.path.join("final_model")
         self.artifact_dir = os.path.join(self.artifact_name, formatted_timestamp)
         self.timestamp: str = formatted_timestamp
         
